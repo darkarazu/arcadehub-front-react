@@ -1,0 +1,44 @@
+.topaux{
+    height: 30px;
+    background: blue;
+}
+.headContainer{
+    height: 150px;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    background: yellow;
+}
+.subContainer{
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    align-items:  center;
+    background: brown;
+}
+
+.menuItem{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background: green;
+}
+
+.menuItem:hover{
+    background: rgb(17, 87, 17);
+}
+
+
+.bigHome{
+    position: relative;
+    top: -10px;
+    left: 10px;
+    padding: 70px;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+.bigHome:hover{
+    background: rgb(99, 14, 14);
+}
