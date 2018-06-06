@@ -2,6 +2,7 @@ import * as React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './containers/Header';
 import Home from './pages/Home';
+import LoginForm from './components/LoginForm';
 import * as styles from './app.css';
 /*import Ranking from './pages/Ranking';
 import Busqueda from './pages/Busqueda';*/
@@ -16,6 +17,7 @@ export default class App extends React.Component {
                         separador
                     </div>
                     <div className={styles.bodyContainer}>
+                        <LoginForm/>
                         <div className={styles.bodyContent}>
                             <Route exact path='/' component={Home}/>
                             <Route path='/home' component={Home}/>
