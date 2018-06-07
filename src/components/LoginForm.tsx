@@ -24,8 +24,10 @@ export default class LoginForm extends React.Component {
                         <input type="password" className={styles.textbox} placeholder="Contraseña"/>
                     </div>
                 </div>
-                <button>Entrar</button>
-                <button>Cancelar</button>
+                <div className={styles.botones}>
+                    <button className={styles.boton}>Entrar</button>
+                    <button className={styles.boton}>Cancelar</button>
+                </div>
             </form>
         </div>;
     }

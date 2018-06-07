@@ -20,6 +20,8 @@
   },
   "homepage": "https://github.com/darkarazu/arcadehub-front-react#readme",
   "dependencies": {
+    "mobx": "^5.0.0",
+    "mobx-react": "^5.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-router": "^4.2.0",
