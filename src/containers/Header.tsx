@@ -37,9 +37,9 @@ export default class Header extends React.Component<HeaderProps, {}> {
                         <Link to='' className={styles.menuItem} onClick={this.toggleLoginForm}>Login</Link>
                     </div>
                     <div className={styles.gridsocial}>
-                        <Link to='' className={styles.fabiconauxfacebook}><i className="fab fa-facebook fa-2x"></i></Link>
-                        <Link to='' className={styles.fabiconauxtwitter}><i className="fab fa-twitter-square fa-2x"></i></Link>
-                        <Link to='https://github.com/darkarazu/arcadehub-front-react' className={styles.fabiconauxgithub}><i className="fab fa-github-square fa-2x"></i></Link>
+                        <a href='' className={styles.fabiconauxfacebook}><i className="fab fa-facebook fa-2x"></i></a>
+                        <a href='' className={styles.fabiconauxtwitter}><i className="fab fa-twitter-square fa-2x"></i></a>
+                        <a href='https://github.com/darkarazu/arcadehub-front-react' className={styles.fabiconauxgithub}><i className="fab fa-github-square fa-2x"></i></a>
                     </div>
                 </div>
         </div>;
