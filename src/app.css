@@ -1,20 +1,23 @@
 .divaux{
-    height: 30px;
+    height: 20px;
     background: rgb(0, 255, 234);
 }
 
 .bodyContainer{
-    display: grid;
-    grid-template-columns: 80% 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .bodyContent{
-    background: rgb(255, 136, 0);
+    width: 80%;
+    background: rgb(185, 185, 185);
 }
 
 .navContent{
     height: 800px;
-    background: rgb(195, 0, 255);    
+    width: 20%;
+    background: rgb(195, 0, 255);   
+    opacity: 0.4; 
 }
 
 .foot{

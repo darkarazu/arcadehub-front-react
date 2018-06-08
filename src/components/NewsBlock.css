@@ -1,0 +1,22 @@
+.superContainer{
+    width: 900px;
+    background: white;
+    box-shadow: 8px 9px 15px 0px rgba(0,0,0,0.75);
+}
+
+.newTitle{
+    margin: 20px;
+    width: 80%;  
+}
+
+.newDesc{
+    margin: 20px;
+    width: 90%;
+    text-align: justify;
+}
+
+.imagen{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

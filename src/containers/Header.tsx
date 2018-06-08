@@ -25,21 +25,21 @@ export default class Header extends React.Component<HeaderProps, {}> {
     }
 
     render() {
-        return <div>
-                <div className={styles.topaux}></div>
+        return <div className={styles.head}>
                 <div className={styles.headContainer}>
                     <div className={styles.gridaux}>
-                        gridaux
                     </div>
                     <div className={styles.subContainer}>
-                        <Link to='/home' className={styles.bigHome}></Link>
+                        <Link to='/home' className={styles.bigHome}>HOME</Link>
                         <Link to='/home' className={styles.menuItem}>Noticias</Link>
                         <Link to='/ranking' className={styles.menuItem}>Ranking</Link>
                         <Link to='/busqueda' className={styles.menuItem}>Busqueda</Link>
                         <Link to='' className={styles.menuItem} onClick={this.toggleLoginForm}>Login</Link>
                     </div>
-                    <div className={styles.gridaux}>
-                        FB / IG / GITHUB
+                    <div className={styles.gridsocial}>
+                        <Link to='' className={styles.fabiconauxfacebook}><i className="fab fa-facebook fa-2x"></i></Link>
+                        <Link to='' className={styles.fabiconauxtwitter}><i className="fab fa-twitter-square fa-2x"></i></Link>
+                        <Link to='https://github.com/darkarazu/arcadehub-front-react' className={styles.fabiconauxgithub}><i className="fab fa-github-square fa-2x"></i></Link>
                     </div>
                 </div>
         </div>;

@@ -1,33 +1,85 @@
-.topaux{
-    height: 30px;
-    background: blue;
+.head{
+    display: flex;
+    justify-content: center;
+    background: black;
 }
+
 .headContainer{
     height: 120px;
+    width: 100%;
     display: flex;
+    justify-content: center;
     background: yellow;
 }
 .gridaux{
-    width: 15%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    background: rgb(27, 27, 27);
 }
+
+.gridsocial{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: rgb(27, 27, 27);
+}
+
+.fabiconaux{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: gray;
+}
+.fabiconauxfacebook{
+    composes: fabiconaux;
+}
+.fabiconauxfacebook i:hover{
+    color: rgb(59, 89, 152);
+    cursor: pointer;
+}
+
+.fabiconauxtwitter{
+    composes: fabiconaux;
+}
+.fabiconauxtwitter i:hover{
+    color: rgb(0, 172, 237);
+    cursor: pointer;
+}
+
+.fabiconauxgithub{
+    composes: fabiconaux;
+}
+.fabiconauxgithub i:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+
 .subContainer{
-    width: 70%;
+    width: 60%;
     display: flex;
     height: 120px;
     justify-content: center;
     align-items:  center;
-    background: brown;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: green;
 }
 
 .menuItem{
-    padding-left: 60px;
-    padding-right: 60px;
+    width: 100px;
     color: rgb(233, 233, 233);
     font-size: 20px;
-    padding-top: 48px;
-    padding-bottom: 48px;
+    padding: 35px;
+    height: 48px;
     text-decoration: none;
     background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menuItem:hover{
@@ -36,11 +88,10 @@
 
 
 .bigHome{
-    position: relative;
-    left: 10px;
-    padding: 50px;
-    width: 100px;
-    height: 70px;
+    composes: menuItem;
+    padding: 30px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background: red;
 }
 

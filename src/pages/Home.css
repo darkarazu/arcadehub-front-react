@@ -1,0 +1,14 @@
+.newsContainer{
+    display: flex;
+    margin: 20px;
+    height: 220px;
+}
+.newsContainerLeft{
+    composes: newsContainer;
+    justify-content: left;
+}
+
+.newsContainerRight{
+    composes: newsContainer;
+    justify-content: right;
+}
