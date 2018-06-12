@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import stores from './stores';
 import { Provider } from 'mobx-react';
 import {inject, observer } from 'mobx-react';
-
+import { VelocityTransitionGroup } from 'velocity-react';
 
 import Header from './containers/Header';
 import Home from './pages/Home';
@@ -40,7 +40,9 @@ export default class App extends React.Component<AppProps, {}> {
                             separador
                         </div>
                         <div className={styles.bodyContainer}>
-                            {stores.loginFormStore.visible && <LoginForm/>}
+                        <VelocityTransitionGroup enter={{animation: "fadeIn"}} leave={{animation: "fadeOut"}}>
+                            {stores.loginFormStore.visible ? <LoginForm/> : undefined}
+                        </VelocityTransitionGroup>
                             <div className={styles.bodyContent}>
                                 <Route exact path='/' component={Home}/>
                                 <Route path='/home' component={Home}/>
