@@ -37,6 +37,7 @@ export default class Header extends React.Component<HeaderProps, {}> {
                         <Link to='/ranking' className={styles.menuItem}>Ranking</Link>
                         <Link to='/busqueda' className={styles.menuItem}>Busqueda</Link>
                         {!this.props.userStore.username && <Link to='' className={styles.menuItem} onClick={this.toggleLoginForm}>Login</Link> }
+                        {this.props.userStore.username && <Link to='' className={styles.menuItem} onClick={this.toggleLoginForm}>{this.props.userStore.username}</Link> }
                     </div>
                     <div className={styles.gridsocial}>
                         <a href='' className={styles.fabiconauxfacebook}><i className="fab fa-facebook fa-2x"></i></a>

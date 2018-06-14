@@ -8,6 +8,7 @@ import {inject, observer } from 'mobx-react';
 import { VelocityTransitionGroup } from 'velocity-react';
 
 import Header from './containers/Header';
+import Navx from './containers/Navx';
 import Home from './pages/Home';
 /*import Ranking from './pages/Ranking';
 import Busqueda from './pages/Busqueda';*/
@@ -17,6 +18,7 @@ import LoginForm from './components/LoginForm';
 
 
 import { LoginFormStore } from './stores/LoginFormStore';
+import { UserStore } from './stores/UserStore';
 
 
 import * as styles from './App.css';
@@ -25,6 +27,7 @@ import * as styles from './App.css';
 
 export interface AppProps {
     loginFormStore?: LoginFormStore;
+    userStore?: UserStore;
 }
 
 
@@ -50,7 +53,7 @@ export default class App extends React.Component<AppProps, {}> {
                                 <Route path='/busqueda' component={Home}/>
                             </div>
                             <div className={styles.navContent}>
-                                nav
+                                <Navx/>
                             </div>
                         </div>
                         <div className={styles.foot}>

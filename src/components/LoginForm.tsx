@@ -50,7 +50,7 @@ export default class LoginForm extends React.Component<LoginFormProps, LoginForm
         this.props.loginFormStore.toggleLoginForm();
     }
     render() { 
-        return         <div className={styles.container}>
+        return <div className={styles.container}>
             <form>
                 <div>
                     <div className={styles.label}>Usuario</div>
