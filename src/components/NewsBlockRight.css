@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+
 .block{
     display: flex;
     justify-content: right;
@@ -6,8 +9,9 @@
 }
 
 .boton{
-    background: rgb(0, 68, 214);
-    color: rgb(247, 247, 247);
+    font-family: 'Ubuntu Mono';
+    background: linear-gradient(gold,rgb(216, 143, 33));
+    color: black;
     width: 100px;
     height: 40px;
     margin-left: 10px;
@@ -16,10 +20,11 @@
     border: none;
     font-weight: bolder;
     align-self: flex-end;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .boton:hover{
-    background: rgb(28, 100, 255);
+    background: linear-gradient(gold,rgb(216, 143, 33));
+    color: white;
     cursor: pointer;
 }

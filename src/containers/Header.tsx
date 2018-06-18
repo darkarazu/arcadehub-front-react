@@ -32,7 +32,7 @@ export default class Header extends React.Component<HeaderProps, {}> {
                     <div className={styles.gridaux}>
                     </div>
                     <div className={styles.subContainer}>
-                        <Link to='/home' className={styles.bigHome}>HOME</Link>
+                        <Link to='/home' className={styles.bigHome}>A</Link>
                         <Link to='/home' className={styles.menuItem}>Noticias</Link>
                         <Link to='/ranking' className={styles.menuItem}>Ranking</Link>
                         <Link to='/busqueda' className={styles.menuItem}>Busqueda</Link>

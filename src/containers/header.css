@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
 .head{
     display: flex;
     justify-content: center;
@@ -9,13 +12,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: yellow;
+    background: rgb(20, 20, 20);
 }
 .gridaux{
     width: 10%;
     display: flex;
     justify-content: center;
-    background: rgb(27, 27, 27);
+    background: rgb(20, 20, 20);
 }
 
 .gridsocial{
@@ -23,20 +26,20 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background: rgb(27, 27, 27);
+    background: rgb(20, 20, 20);
 }
 
 .fabiconaux{
     margin-top: 5px;
     margin-left: 5px;
     margin-right: 5px;
-    color: gray;
+    color: gold;
 }
 .fabiconauxfacebook{
     composes: fabiconaux;
 }
 .fabiconauxfacebook i:hover{
-    color: rgb(59, 89, 152);
+    color: rgb(22, 81, 209);
     cursor: pointer;
 }
 
@@ -66,35 +69,44 @@
     align-items:  center;
     margin-left: 10px;
     margin-right: 10px;
-    background: green;
+    background: rgb(20, 20, 20);
 }
 
 .menuItem{
+    font-family: 'Press Start 2P';
     width: 100px;
-    color: rgb(233, 233, 233);
-    font-size: 25px;
+    color: rgb(220, 220, 220);
+    font-size: 18px;
     padding: 35px;
     height: 48px;
     text-decoration: none;
-    background: green;
+    background: rgb(10, 10, 10);
     display: flex;
     justify-content: center;
     align-items: center;
+    border-right: 5px solid gold;
 }
 
 .menuItem:hover{
-    background: rgb(17, 87, 17);
+    background: rgb(30, 30, 30);
 }
+
 
 
 .bigHome{
     composes: menuItem;
     padding: 30px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background: red;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 100px;
+    border-right: none;
+    color:black;
+    background: linear-gradient(gold,rgb(216, 143, 33));
+    text-shadow: 3px 3px 5px black;
 }
 
 .bigHome:hover{
-    background: rgb(99, 14, 14);
+    background: linear-gradient(gold,rgb(216, 143, 33));
+    color: white;
+    text-shadow: 3px 3px 5px black;
 }

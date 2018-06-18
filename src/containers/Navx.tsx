@@ -3,6 +3,8 @@ import { inject, observer } from 'mobx-react';
 
 import { UserStore } from '../stores/UserStore';
 
+import FeedLine from '../components/FeedLine';
+
 import * as styles from './Navx.css';
 
 export interface NavxProps {
@@ -20,7 +22,10 @@ export default class Navx extends React.Component<NavxProps, {}> {
 
     render() {
         return <div className={styles.container}>
-            navx
+            <FeedLine/>
+            <FeedLine/>
+            <FeedLine/>
+            <FeedLine/>
         </div>;
     }
 }

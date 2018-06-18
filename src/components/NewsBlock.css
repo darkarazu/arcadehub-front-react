@@ -1,18 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
+
+
 .superContainer{
     width: 900px;
-    background: white;
+    background: rgb(20, 20, 20);
     box-shadow: 8px 9px 15px 0px rgba(0,0,0,0.75);
 }
 
 .newTitle{
-    margin: 20px;
+    margin-left: 15px;
     width: 80%;  
+    font-family:'Ubuntu Mono';
+    font-size:18px;
+    color: rgb(200, 200, 200);
 }
 
 .newDesc{
-    margin: 20px;
+    margin-left: 15px;
     width: 90%;
     text-align: justify;
+    font-size: 16px;
+    font-family:'Ubuntu Mono';
+    color:rgb(200, 200, 200);
 }
 
 .imagen{
