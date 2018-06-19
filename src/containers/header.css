@@ -41,6 +41,7 @@
 .fabiconauxfacebook i:hover{
     color: rgb(22, 81, 209);
     cursor: pointer;
+    box-shadow:  0px 5px 9px 0px rgba(255, 215, 0, 0.5);
 }
 
 .fabiconauxtwitter{
@@ -49,6 +50,7 @@
 .fabiconauxtwitter i:hover{
     color: rgb(0, 172, 237);
     cursor: pointer;
+    box-shadow:  0px 5px 9px 0px rgba(255, 215, 0, 0.5);
 }
 
 .fabiconauxgithub{
@@ -57,6 +59,7 @@
 .fabiconauxgithub i:hover{
     color: rgb(255, 255, 255);
     cursor: pointer;
+    box-shadow:  0px 5px 9px 0px rgba(255, 215, 0, 0.5);
 }
 
 
@@ -89,6 +92,7 @@
 
 .menuItem:hover{
     background: rgb(30, 30, 30);
+    box-shadow:  0px 3px 7px 0px gold;
 }
 
 
@@ -103,10 +107,12 @@
     color:black;
     background: linear-gradient(gold,rgb(216, 143, 33));
     text-shadow: 3px 3px 5px black;
+    z-index: 10;
 }
 
 .bigHome:hover{
     background: linear-gradient(gold,rgb(216, 143, 33));
+    box-shadow: 1px 0px 17px 0px gold;
     color: white;
-    text-shadow: 3px 3px 5px black;
+    text-shadow: 1px 0px 17px 0px white;
 }

@@ -27,4 +27,5 @@
     background: linear-gradient(gold,rgb(216, 143, 33));
     color: white;
     cursor: pointer;
+    box-shadow: 1px 0px 5px 0px gold;
 }

@@ -36,4 +36,5 @@
 .logro:hover{
     cursor: pointer;
     color: white;
+    box-shadow: 1px 0px 5px 0px gold;
 }
