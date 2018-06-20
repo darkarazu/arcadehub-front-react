@@ -8,7 +8,7 @@ import FeedLine from '../components/FeedLine';
 import * as styles from './Navx.css';
 
 export interface NavxProps {
-    userStore?: UserStore
+    userStore?: UserStore;
 }
 
 

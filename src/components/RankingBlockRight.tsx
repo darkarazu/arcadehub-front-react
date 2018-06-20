@@ -11,7 +11,7 @@ export interface RankingBlockLeftProps {
 
 export default class RankingBlockRight extends React.Component<RankingBlockLeftProps, {}> {
 
-    render() { 
+    render() {
         return <div className={supstyles.superContainerRank}>
             <div className={styles.block}>
                 <div className={styles.rankOrder}>
@@ -28,7 +28,7 @@ export default class RankingBlockRight extends React.Component<RankingBlockLeftP
                         </ul>
                     </div>
                 </div>
-                <img src="http://www.volcanica.cat/wp-content/uploads/2015/10/LOGO-HEARTHSTONE.jpg" className={supstyles.imagen} alt="Smiley face" height="200" width="200"/>
+                <img src='http://www.volcanica.cat/wp-content/uploads/2015/10/LOGO-HEARTHSTONE.jpg' className={supstyles.imagen} alt='Smiley face' height='200' width='200'/>
             </div>
         </div>;
     }

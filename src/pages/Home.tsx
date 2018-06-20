@@ -8,12 +8,13 @@ import NewsBlockLeft from '../components/NewsBlockLeft';
 
 
 
-export interface News{
+export interface News {
     id: number;
     title: string;
     desc: string;
 }
-//Array Prueba
+// Array Prueba
+
 const newsList: News[] = [
     {id: 1,
     title: 'Lorem Ipsum dolor sit amet Izq',
@@ -38,24 +39,22 @@ const newsList: News[] = [
 ];
 export default class Home extends React.Component {
 
-    renderNews(news: News, index){
-        if(index%2 === 0) {
+    renderNews(news: News, index) {
+        if (index % 2 === 0) {
             return (
                 <div key={news.id} className={styles.newsContainerLeft}>
                     <NewsBlockLeft title={news.title} desc={news.desc}/>
-                </div>                
+                </div>
             );
-        }else {
+        } else {
             return (<div key={news.id} className={styles.newsContainerRight}>
                 <NewsBlockRight title={news.title} desc={news.desc}/>
             </div>);
         }
     }
-    
-
     render() {
         return <div className={styles.newContainer}>
-                {newsList.map((news,index) => this.renderNews(news,index))}              
+                {newsList.map((news, index) => this.renderNews(news, index))}
             </div>;
     }
 }

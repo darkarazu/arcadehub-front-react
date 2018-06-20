@@ -7,15 +7,16 @@ export class  UserStore {
     @observable password;
 
     @action doLogin(username, password) {
-        superagent.post('http://arcadehub.me:3000/login')
+        superagent.post('192.168.1.211:3000/login')
                   .send({username, password})
                   .end((err, res) => {
                     if (err) {
                         console.log(err);
                     }
                     else {
-                       localStorage.setItem('APIKEY', res.apikey);
+                       localStorage.setItem('APIKEY', res.apiKey);
                        localStorage.setItem('user', username);
+                       (<any>window).apiKey = res.apiKey;
                     }
                   });
     }

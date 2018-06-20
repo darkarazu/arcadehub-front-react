@@ -11,7 +11,7 @@ export interface FeedLineProps {
 export default class FeedLine extends React.Component<FeedLineProps, {}> {
 
 
-    render() { 
+    render() {
         return <div className={styles.container}>
             <div className={styles.feed}>
                 <div><strong>Doomlord -</strong> Ha conseguido el logro:</div>
@@ -19,7 +19,6 @@ export default class FeedLine extends React.Component<FeedLineProps, {}> {
                     First Blood!
                 </div>
             </div>
-            
         </div>;
     }
 
