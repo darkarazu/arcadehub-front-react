@@ -3,15 +3,15 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 import stores from './stores';
-import { Provider } from 'mobx-react';
-import {inject, observer } from 'mobx-react';
+import { inject, observer, Provider } from 'mobx-react';
 import { VelocityTransitionGroup } from 'velocity-react';
 
 import Header from './containers/Header';
 import Navx from './containers/Navx';
+import Footer from './containers/Footer';
 import Home from './pages/Home';
-/*import Ranking from './pages/Ranking';
-import Busqueda from './pages/Busqueda';*/
+import Ranking from './pages/Ranking';
+/*import Busqueda from './pages/Busqueda';*/
 
 
 import LoginForm from './components/LoginForm';
@@ -43,13 +43,13 @@ export default class App extends React.Component<AppProps, {}> {
                             separador
                         </div>
                         <div className={styles.bodyContainer}>
-                        <VelocityTransitionGroup enter={{animation: "fadeIn"}} leave={{animation: "fadeOut"}}>
+                        <VelocityTransitionGroup enter={{animation: 'fadeIn'}} leave={{animation: 'fadeOut'}}>
                             {stores.loginFormStore.visible ? <LoginForm/> : undefined}
                         </VelocityTransitionGroup>
                             <div className={styles.bodyContent}>
                                 <Route exact path='/' component={Home}/>
                                 <Route path='/home' component={Home}/>
-                                <Route path='/ranking' component={Home}/>
+                                <Route path='/ranking' component={Ranking}/>
                                 <Route path='/busqueda' component={Home}/>
                             </div>
                             <div className={styles.navContent}>
@@ -57,7 +57,7 @@ export default class App extends React.Component<AppProps, {}> {
                             </div>
                         </div>
                         <div className={styles.foot}>
-                            Footer
+                            <Footer/>
                         </div>
                     </div>
                 </Router>

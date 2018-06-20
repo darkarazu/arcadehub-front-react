@@ -12,3 +12,8 @@
     composes: newsContainer;
     justify-content: right;
 }
+
+.newContainer{
+    margin:auto;
+    width: 95%;
+}

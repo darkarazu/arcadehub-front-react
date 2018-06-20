@@ -20,12 +20,14 @@
   },
   "homepage": "https://github.com/darkarazu/arcadehub-front-react#readme",
   "dependencies": {
+    "@types/superagent": "^3.8.1",
     "mobx": "^5.0.0",
     "mobx-react": "^5.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
+    "superagent": "^3.8.3",
     "velocity-react": "^1.4.1"
   },
   "devDependencies": {

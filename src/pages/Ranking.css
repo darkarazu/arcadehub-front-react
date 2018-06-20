@@ -1,0 +1,19 @@
+.rankingContainer{
+    display: flex;
+    margin: 20px;
+    height: 220px;
+}
+.rankingContainerLeft{
+    composes: rankingContainer;
+    justify-content: left;
+}
+
+.rankingContainerRight{
+    composes: rankingContainer;
+    justify-content: right;
+}
+
+.rankContainer{
+    margin:auto;
+    width: 80%;
+}

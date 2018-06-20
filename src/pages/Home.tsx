@@ -54,7 +54,7 @@ export default class Home extends React.Component {
     
 
     render() {
-        return <div>
+        return <div className={styles.newContainer}>
                 {newsList.map((news,index) => this.renderNews(news,index))}              
             </div>;
     }

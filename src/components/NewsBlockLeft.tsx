@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as styles from './NewsBlockLeft.css';
-import * as supstyles from './NewsBlock.css';
+import * as supstyles from './Block.css';
 
 export interface NewsBlockLeftProps {
     title: string;
@@ -11,10 +11,10 @@ export interface NewsBlockLeftProps {
 export default class NewsBlockLeft extends React.Component<NewsBlockLeftProps, {}> {
 
 
-    render() { 
+    render() {
         return <div className={supstyles.superContainer}>
             <div className={styles.block}>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/WoW_icon.svg/245px-WoW_icon.svg.png" className={supstyles.imagen} alt="Smiley face" height="200" width="200"/>
+                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/WoW_icon.svg/245px-WoW_icon.svg.png' className={supstyles.imagen} alt='Smiley face' height='200' width='200'/>
                 <div>
                     <div className={supstyles.newTitle}>
                     <h4>{this.props.title}</h4>
@@ -25,7 +25,6 @@ export default class NewsBlockLeft extends React.Component<NewsBlockLeftProps, {
                 </div>
                 <button className={styles.boton}>Entrar</button>
             </div>
-            
         </div>;
     }
 

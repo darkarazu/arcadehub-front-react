@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as styles from './NewsBlockRight.css';
-import * as supstyles from './NewsBlock.css';
+import * as supstyles from './Block.css';
 
 
 export interface NewsBlockLeftProps {

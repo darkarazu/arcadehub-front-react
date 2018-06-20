@@ -7,23 +7,22 @@ import { UserStore } from '../stores/UserStore';
 
 
 export interface LoginFormProps {
-    loginFormStore?: LoginFormStore,
-    userStore?: UserStore
+    loginFormStore?: LoginFormStore;
+    userStore?: UserStore;
 }
 
 export interface LoginFormState {
-    username?: string,
-    password?: string
+    username?: string;
+    password?: string;
 }
 
 
-@inject('loginFormStore','userStore')
+@inject('loginFormStore', 'userStore')
 @observer
 export default class LoginForm extends React.Component<LoginFormProps, LoginFormState> {
     constructor(props) {
         super(props);
-        this.setState({username: ""})
-        this.setState({password: ""})
+        this.state = {username: '', password: ''};
 
         this.toggleLoginForm = this.toggleLoginForm.bind(this);
         this.doLogin = this.doLogin.bind(this);
@@ -31,9 +30,9 @@ export default class LoginForm extends React.Component<LoginFormProps, LoginForm
         this.changingPassword = this.changingPassword.bind(this);
     }
 
-    doLogin() {
+    doLogin(event) {
         event.preventDefault();
-        this.props.userStore.doLogin(this.state.username,this.state.password);
+        this.props.userStore.doLogin(this.state.username, this.state.password);
         this.toggleLoginForm(event);
     }
 
@@ -49,7 +48,7 @@ export default class LoginForm extends React.Component<LoginFormProps, LoginForm
         event.preventDefault();
         this.props.loginFormStore.toggleLoginForm();
     }
-    render() { 
+    render() {
         return <div className={styles.container}>
             <form>
                 <div>
@@ -58,16 +57,16 @@ export default class LoginForm extends React.Component<LoginFormProps, LoginForm
                         <div className={styles.userblock}>
                             <div>@</div>
                         </div>
-                        <input type="text" className={styles.textbox} value={this.state.username} onChange={this.changingUser} placeholder="Usuario"/>
+                        <input type='text' className={styles.textbox} value={this.state.username} onChange={this.changingUser} placeholder='Usuario'/>
                     </div>
                 </div>
                 <div>
                     <div className={styles.label}>Contraseña</div>
                     <div className={styles.subcontainer}>
                         <div className={styles.userblock}>
-                            <div><i className="fas fa-lock"></i></div>
+                            <div><i className='fas fa-lock'></i></div>
                         </div>
-                        <input type="password" className={styles.textbox} value={this.state.password} onChange={this.changingPassword} placeholder="Contraseña"/>
+                        <input type='password' className={styles.textbox} value={this.state.password} onChange={this.changingPassword} placeholder='Contraseña'/>
                     </div>
                 </div>
                 <div className={styles.enlaces}>
