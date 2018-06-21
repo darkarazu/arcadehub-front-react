@@ -13,8 +13,8 @@ export default class Game extends React.Component {
                     <head>
                     </head>
                     <body>
-                    <script src="lib/phaser-ce/phaser.min.js"></script>
-                    <script src="dist/bundle.js"></script>
+                    <script src="arcadehub.me/lib/phaser-ce/phaser.min.js"></script>
+                    <script src="arcadehub.me/dist/bundle.js"></script>
                     </body>
                     </html>
                     `}>
