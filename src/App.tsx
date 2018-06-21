@@ -11,6 +11,7 @@ import Navx from './containers/Navx';
 import Footer from './containers/Footer';
 import Home from './pages/Home';
 import Ranking from './pages/Ranking';
+import Game from './pages/Game';
 /*import Busqueda from './pages/Busqueda';*/
 
 
@@ -51,6 +52,7 @@ export default class App extends React.Component<AppProps, {}> {
                                 <Route path='/home' component={Home}/>
                                 <Route path='/ranking' component={Ranking}/>
                                 <Route path='/busqueda' component={Home}/>
+                                <Route path='/Valkyrie-Fighter' component={Game}/>
                             </div>
                             <div className={styles.navContent}>
                                 <Navx/>
