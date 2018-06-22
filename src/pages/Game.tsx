@@ -1,19 +1,47 @@
 import * as React from 'react';
-import Frame from 'react-frame-component';
+import { inject, observer } from 'mobx-react';
+
+
+import { UserStore } from '../stores/UserStore';
 import * as styles from './Game.css';
 
+export interface GameProps {
+    userStore?: UserStore;
+}
 
 
-export default class Game extends React.Component {
+@inject('userStore')
+@observer
+export default class Game extends React.Component<GameProps, {}> {
+
+    isLoggedRender(ak: string) {
+        if (ak) {
+            console.log(ak);
+            console.log(`./games/Valkyrie_Fighter/index.html?apiKey=${ak}`);
+            return <iframe src={`./games/Valkyrie_Fighter/index.html?apiKey=${ak}`} className={styles.frame1}></iframe>;
+        } else {
+            alert('Debes estar logeado primero.');
+        }
+    }
 
     render() {
         return <div className={styles.container}>
-                <Frame initialContent= {
-                    `
-                    <script src="/dist/games/Valkyrie_Fighter/lib/phaser-ce/phaser.min.js"></script>
-                    <script src="/dist/games/Valkyrie_Fighter/dist/bundle.js"></script>
-                    `}>
-                </Frame>
+                { this.isLoggedRender(this.props.userStore.apiKey) }
             </div>;
     }
 }
+
+//
+
+
+/*<Frame className={styles.frame1} initialContent= {
+                    `<!DOCTYPE html>
+                        <html>
+                            <head>
+                            </head>
+                            <body>
+                                <iframe src='./games/Valkyrie_Fighter/index.html'></iframe>
+                            </body>
+                        </html>
+                    `}>
+                </Frame>*/

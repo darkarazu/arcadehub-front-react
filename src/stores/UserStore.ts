@@ -3,8 +3,9 @@ import * as superagent from 'superagent';
 
 export class  UserStore {
     @observable admin = false;
-    @observable username = localStorage.getItem('username');
+    @observable username; // = localStorage.getItem('username');
     @observable password;
+    @observable apiKey; // = localStorage.getItem('APIKEY');
 
     @action doLogin(username, password) {
         switch (username) {
@@ -15,6 +16,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'A';
+                    this.apiKey = 'A';
                     break;
                 }
                 break;
@@ -25,6 +27,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'B';
+                    this.apiKey = 'B';
                     break;
                 }
                 break;
@@ -35,6 +38,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'C';
+                    this.apiKey = 'C';
                     break;
                 }
                 break;
@@ -45,6 +49,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'D';
+                    this.apiKey = 'D';
                     break;
                 }
                 break;
@@ -55,6 +60,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'E';
+                    this.apiKey = 'E';
                     break;
                 }
                 break;
@@ -65,6 +71,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'F';
+                    this.apiKey = 'F';
                     break;
                 }
                 break;
@@ -75,6 +82,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'G';
+                    this.apiKey = 'G';
                     break;
                 }
                 break;
@@ -85,6 +93,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'H';
+                    this.apiKey = 'H';
                     break;
                 }
                 break;
@@ -95,6 +104,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'I';
+                    this.apiKey = 'I';
                     break;
                 }
                 break;
@@ -105,6 +115,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'J';
+                    this.apiKey = 'J';
                     break;
                 }
                 break;
@@ -115,6 +126,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'K';
+                    this.apiKey = 'K';
                     break;
                 }
                 break;
@@ -125,6 +137,7 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'L';
+                    this.apiKey = 'L';
                     break;
                 }
                 break;
@@ -135,12 +148,14 @@ export class  UserStore {
                     this.username = username;
                     this.password = password;
                     (<any>window).apiKey = 'M';
+                    this.apiKey = 'M';
                     break;
                 }
                 break;
             default:
                 localStorage.setItem('APIKEY', 'N');
                 localStorage.setItem('username', 'Guest');
+                this.apiKey = 'N';
                 break;
         }
         /*superagent.post('http://www.arcadehub.me:3000/login')

@@ -3,7 +3,7 @@
 
 .block{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     width: 100%;
     height: 100%;
 }
