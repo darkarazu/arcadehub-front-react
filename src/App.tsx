@@ -41,7 +41,6 @@ export default class App extends React.Component<AppProps, {}> {
                     <div>
                         <Header/>
                         <div className={styles.divaux}>
-                            separador
                         </div>
                         <div className={styles.bodyContainer}>
                         <VelocityTransitionGroup enter={{animation: 'fadeIn'}} leave={{animation: 'fadeOut'}}>
